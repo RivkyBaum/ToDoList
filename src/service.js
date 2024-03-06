@@ -17,9 +17,10 @@ export default {
     return result.data;
   },
 
-  addTask: async(name)=>{
+ addTask: async(name)=>{
     console.log('addTask', name)
-    const result = await axios.post('/item', { name });
+    debugger
+    const result = await axios.post(`/item/${name}`);
     return result.data;
   },
 
